@@ -1,0 +1,14 @@
+[
+    {
+        "id_in_cart": 1,
+        "product_id": 15,
+        "buyer_id": 2,
+        "wanted_quantity": 1
+    },
+    {
+        "id_in_cart": 2,
+        "product_id": 16,
+        "buyer_id": 2,
+        "wanted_quantity": 4
+    }
+]

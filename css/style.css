@@ -1,0 +1,32 @@
+.container{
+    background: black;
+}
+
+.card{
+    margin: 10px;
+}
+
+
+/* =================================== */
+/* =================================== */
+/* ============ Form Page ============= */
+/* =================================== */
+/* =================================== */
+
+
+
+section.form h2{
+    padding: 10px;
+    color: white;
+}
+
+section.form input{
+    margin-bottom: 5px;
+}
+
+section.form :last-of-type button{
+    margin-bottom: 10px;
+}
+
+
+
