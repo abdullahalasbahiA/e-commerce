@@ -18,12 +18,7 @@
         <title>Phones Shop</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('')
-            });
-        </script>
+
     </head>
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -76,8 +71,9 @@
                 </ul>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="cart.php?count=<?php echo $count; ?>" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="img/shopping-cart.png" alt="Shopping cart icons created by Freepik - Flaticon" width="20px"/><span class="cart-items">
+                <a class="nav-link" href="cart.php" >
+                    <img src="img/shopping-cart.png" alt="Shopping cart icons created by Freepik - Flaticon" width="20px"/>
+                    <span class="cart-items">
                         <?php
                             // echo $count;
                         ?>

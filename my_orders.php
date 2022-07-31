@@ -1,10 +1,10 @@
 <?php 
 
 include 'header.php'; 
-include 'classes/cart.classes.php';
+include 'classes/order.classes.php';
 
-$cart = new Cart();
-$cartItems = $cart->showCartItems($_SESSION['userid']);
+$order = new Order();
+$orderItems = $order->showOrderItems($_SESSION['userid']);
 
 ?>
 

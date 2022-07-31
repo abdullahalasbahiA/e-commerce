@@ -57,7 +57,7 @@ if(isset($_POST['submit_search'])){
                       echo $_SESSION['userid'];
                     }
                 echo"'>
-                <button type='submit' name='add-to-cart' class='btn btn-success'>Add to cart</button>
+                <button id='add-to-cart' type='submit' name='add-to-cart' class='btn btn-success'>Add to cart</button>
               </form>
                 <button type='submit'  class='btn btn-primary'>Buy now</button>
             </div>
@@ -92,7 +92,7 @@ if(isset($_POST['submit_search'])){
             <p class='card-text'>"."The description"."</p>
             <span>Price: $".$searchResult['product_price']."</span><br>
             <a href='' class='btn btn-primary'>Buy now</a>
-            <a href='#' class='btn btn-success'>Add to cart</a>
+            <a id='add-to-cart' href='#' class='btn btn-success'>Add to cart</a>
             </div>
             </div>
           ";

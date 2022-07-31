@@ -28,5 +28,50 @@ section.form :last-of-type button{
     margin-bottom: 10px;
 }
 
+.container.cart{
+    background: white;
+}
 
+.container .item-container{
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
 
+.container .item-container .item-info{
+    background: greenyellow;
+    padding: 10px;
+    width: 100%;
+}
+
+.container .item-container .item-control{
+    background: paleturquoise;
+    width: 100%;
+}
+
+.container .item-container img {
+    border-radius: 5px;
+}
+
+.container .item-container span.name {
+    font-size: 2em;
+}
+
+.container .item-container span.price {
+    background: black;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.checkout-container .price{
+    font-size: 3em;
+    font-weight: bold;
+}
