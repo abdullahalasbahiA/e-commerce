@@ -1,5 +1,10 @@
 <?php 
 
+
+if(!isset($_SESSION['userid'])){
+    header("location: login-signup.php");
+}
+
 include 'header.php'; 
 include 'classes/cart.classes.php';
 
@@ -29,11 +34,11 @@ $cartItems = $cart->showCartItems($_SESSION['userid']);
     </div>
     <?php endforeach; ?>
     <div class="checkout-container">
-            <span class="price"><?php echo "Total price: ".$cart->cartTotalPrice($_SESSION['userid']); ?></span>
-            <form action="includes/cart.inc.php" method="post">
-                <button type="submit" name="confirm-the-order" class="btn btn-primary" value="Confirm the order">
-                <input type="submit" name="cancel-the-order" class="btn btn-danger" value="Cancel Order">
-            </form>
+        <span class="price"><?php echo "Total price: ".$cart->cartTotalPrice($_SESSION['userid']); ?></span>
+        <form action="includes/cart.inc.php" method="post">
+            <input type="submit" name="confirm-the-order" class="btn btn-primary" value="Confirm the order">
+            <input type="submit" name="cancel-the-order" class="btn btn-danger" value="Cancel Order">
+        </form>
     </div>
 </div>
 

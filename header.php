@@ -39,6 +39,12 @@
                         <li class="nav-item">
                         <a class="nav-link active" href="#">Profile</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="customers_orders.php">Customers orders</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="my_orders.php">My orders</a>
+                        </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             '.$_SESSION['useruid'].'

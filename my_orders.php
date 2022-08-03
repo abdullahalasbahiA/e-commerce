@@ -4,11 +4,13 @@ include 'header.php';
 include 'classes/order.classes.php';
 
 $order = new Order();
-$orderItems = $order->showOrderItems($_SESSION['userid']);
+$orderItems = $order->user_products_from_cart_to_the_orders($_SESSION['userid']);
 
 ?>
 
-<div class="container cart">
+
+
+<!-- <div class="container cart">
     <?php foreach($cartItems as $cartOneItem): ?>
     <div class="item-container">
         <div class="item-info">
@@ -35,6 +37,6 @@ $orderItems = $order->showOrderItems($_SESSION['userid']);
                 <input type="submit" name="cancel-the-order" class="btn btn-danger" value="Cancel Order">
             </form>
     </div>
-</div>
+</div> -->
 
 <?php include 'footer.php';?>

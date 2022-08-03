@@ -17,8 +17,11 @@ if(isset($_POST['submit_search'])){
 <div class="container">
   <div class="row justify-content-center">
 		<form class="form" action="" method="post">
-      <input type="text" name="searching_text" placeholder="search for item(s)..." />
-      <button type="submit" name="submit_search">search...</button>
+    <div class="input-group" style="width: 80%; margin: auto;margin-top: 5px">  
+      <input type="search" class="form-control rounded" name="searching_text" placeholder="search for item(s)..." />
+      <button class="btn btn-outline-primary" type="submit" name="submit_search">search</button>       
+      <button class="btn btn-outline-danger" type="submit" name="submit_search">X</button>       
+      </div>
     </form>
     <?php
 
@@ -57,6 +60,7 @@ if(isset($_POST['submit_search'])){
                       echo $_SESSION['userid'];
                     }
                 echo"'>
+                <input type='hidden' name='vendorid' value='".$product['product_vendor_id']."'>
                 <button id='add-to-cart' type='submit' name='add-to-cart' class='btn btn-success'>Add to cart</button>
               </form>
                 <button type='submit'  class='btn btn-primary'>Buy now</button>
